@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const cLan = 'C is fun';
 const pLan = 'Python is cool';
 const jsLan = 'JavaScript is amazing';
