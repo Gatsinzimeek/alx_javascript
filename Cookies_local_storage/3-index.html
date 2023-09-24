@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Cookies</title>
+</head>
+<style type="text/css">
+	h1{
+		font-size: 45px;
+	}
+	input{
+		padding: 5px;
+		font-size: 17px;
+	}
+	button{
+		padding: 5px;
+		font-size: 17px;
+	}
+</style>
+
+<body>
+	<h1>Login to the website</h1>
+	<input type="text" class="first" placeholder="Firstname">
+	<input type="text" class="email" placeholder="Email">
+	<button onclick="setCookies()">Log me in</button>
+	<h1>Cookies</h1>
+	<button onclick="showCookies()">Show the cookies</button>
+	<center>
+		<div class="showcookies"></div>
+	</center>
+</body>
+<script>
+	let Firstname = document.querySelector('.first');
+	let email = document.querySelector('.email');
+	let body = document.querySelector('.showcookies');
+	
+
+	const setCookies = () => {
+		document.cookie = `name=${Firstname.value}; expires=${new Date(2023,0,1).toUTCString()}`;
+		document.cookie = `email = ${email.value};`; 
+		console.log(document.cookie);
+		Firstname.value = '';
+		email.value = '';
+	}
+
+	const showCookies = () =>{
+	    const para =  document.createElement('p');
+		let cookeis = document.cookie;
+		para.innerHTML = cookeis;
+		body.appendChild(para);
+		}
+</script>
+</html>
