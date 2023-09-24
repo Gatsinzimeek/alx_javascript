@@ -1,4 +1,4 @@
-export class Rectangle {
+class Rectangle {
   constructor(w, h) {
     if(w > 1 && h > 1) {
       this.width = w;
