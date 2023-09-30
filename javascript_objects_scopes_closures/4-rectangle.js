@@ -5,28 +5,31 @@ class Rectangle {
       this.height = h;
     }
   }
-  print = () => {
+  print() {
     for(let i = 1; i <= this.height; i++){
+      let row = '';
       for(let j = 1; j <= this.width; j++){
-        console.log('X');
+        row += 'X'
       }
-      console.log('\n');
+      console.log(row);
     }
   };
-  double = () => {
+  double() {
     for(let i = 1; i <= this.height*2; i++){
+      let row = '';
       for(let j = 1; j <= this.width*2; j++){
-        console.log('X');
+        row += 'X'
       }
-      console.log('\n');
+      console.log(row);
       }
     };
-  rotate = () => {
+  rotate() {
     for(let i = 1; i <= this.width*2; i++){
+      let row = '';
       for(let j = 1; j <= this.height*2; j++){
-        console.log('X');
+        row += 'X'
       }
-      console.log('\n');
+      console.log(row);
     }
    }
 };
