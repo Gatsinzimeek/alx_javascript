@@ -24,9 +24,9 @@ class Rectangle {
       }
     };
   rotate() {
-    for(let i = 1; i <= this.width*2; i++){
+    for(let i = 1; i <= this.width; i++){
       let row = '';
-      for(let j = 1; j <= this.height*2; j++){
+      for(let j = 1; j <= this.height; j++){
         row += 'X'
       }
       console.log(row);
