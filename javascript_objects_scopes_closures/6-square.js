@@ -1,4 +1,4 @@
-const sqr = require('./5-square.js');
+const Square = require('./5-square.js');
 class square extends Square {
   constructor(num) {
     super(num)
