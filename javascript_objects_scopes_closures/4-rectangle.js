@@ -15,22 +15,15 @@ class Rectangle {
     }
   };
   double() {
-    for(let i = 1; i <= this.height*2; i++){
-      let row = '';
-      for(let j = 1; j <= this.width*2; j++){
-        row += 'X'
-      }
-      console.log(row);
-      }
-    };
-  rotate() {
-    for(let i = 1; i <= this.width; i++){
-      let row = '';
-      for(let j = 1; j <= this.height; j++){
-        row += 'X'
-      }
-      console.log(row);
+      this.width *= 2;
+      this.height *= 2;
     }
+  rotate() {
+   let row = this.width;
+   let col = this.height;
+
+    this.width = col;
+    this.height = row;
    }
 };
 
