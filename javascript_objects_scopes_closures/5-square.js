@@ -1,4 +1,4 @@
-import { Rectangle } from './4-rectangle';
+const Rectangle = require('./rectangle');
 class Square extends Rectangle {
   constructor(size) {
     super(size, size);
