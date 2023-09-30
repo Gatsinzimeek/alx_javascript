@@ -8,18 +8,20 @@ class square extends Square {
   charPrint = (c) => {
     if(c === undefined){
       for(let a = 1; a <= this.he; a++){
+        let row = '';
         for(let b = 1; b <= this.wi; b++){
-          console.log('X');
+        row += 'X';
         }
-          console.log('\n');
+          console.log(row);
       }
     }
     else{
       for(let a = 1; a <= this.he; a++) {
+        let row = '';
         for(let b = 1; b <= this.wi; b++) {
-          console.log('C');
+        row += 'C';
         }
-        console.log('\n');
+          console.log(row);
       }
     }
   }
