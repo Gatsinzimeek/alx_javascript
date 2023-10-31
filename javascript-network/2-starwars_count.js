@@ -12,6 +12,6 @@ req.get(Urlarg,(error,res,body)=>{
         let count = films.forEach(film => {
             film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)
         });
-        console.log(filmsWithWedgeAntilles.length);
+        console.log(count.length);
     }
 });
