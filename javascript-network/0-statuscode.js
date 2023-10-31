@@ -1,6 +1,12 @@
 const req = require('request');
 
-req.get('https://swapi-api.alx-tools.com/api/')
-    .on('data', (data) =>{
-        console.log(data);
-    });
+// pass cmd line argument
+const url = process.argv[2];
+
+req.get(url,(error,response)=>{
+    if(error){
+        console.log("error:", error);
+    }else{
+        console.log(response.statusCode);
+    }
+});
