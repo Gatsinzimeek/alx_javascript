@@ -17,7 +17,7 @@ request(apiUrl, (error, response, body) => {
     );
 
     // Print the count of films with Wedge Antilles
-    console.log(`Number of films with Wedge Antilles: ${filmsWithWedgeAntilles.length}`);
+    console.log(filmsWithWedgeAntilles.length);
   } else {
     console.error('Error:', error);
   }
